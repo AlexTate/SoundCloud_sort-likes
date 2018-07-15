@@ -5,20 +5,19 @@ var sorted = Array.from(d).sort(function(a, b){
 	var aLike = parseInt(a.querySelector("[class^=sc-button-like]").innerText) || 0;
 	var bLike = parseInt(b.querySelector("[class^=sc-button-like]").innerText) || 0;
 	
+	/*
 	var aRep = parseInt(a.querySelector("[class^=sc-button-repost]").innerText) || 1;
 	var bRep = parseInt(b.querySelector("[class^=sc-button-repost]").innerText) || 1;
-	
-	/*
 	var aPlays = a.querySelector("[class$=sc-ministats-plays] > span.sc-visuallyhidden").innerText;
 		aPlays = parseInt(aPlays.match(/([\d,])/g).join("")) || 0;
 	var bPlays = b.querySelector("[class$=sc-ministats-plays] > span.sc-visuallyhidden").innerText;
 		bPlays = parseInt(bPlays.match(/([\d,])/g).join("")) || 0;
-	*/
 	
 	var aRank = aLike + (aLike / aRep);
 	var bRank = bLike + (bLike / bRep);
+	*/
 	
-	return bRank - aRank;
+	return bLike - aLike;
 });
 
 for (let item of sorted) {
