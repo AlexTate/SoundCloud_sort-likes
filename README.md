@@ -7,3 +7,5 @@ For easiest use I recommend creating a bookmarklet that contains the code.
 3. In the url field, type "javascript:" without quotes
 4. Paste the above code in the url field after "javascript:"
 5. Click the bookmark on any SoundCloud feed that you wish to sort by likes
+
+Does not work on playlists as feeds, so whenever you can't actually <i>see</i> the like count. However, it does work an playlists as post items within a feed, i.e. alongside other single and multi-track posts.
